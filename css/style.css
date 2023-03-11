@@ -113,6 +113,21 @@ nav{
     font-size: 40px;
     font-weight: 700;
   }
+  div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    column-count: 3;
+  }
+  div article{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    column-count: 3;
+    column-gap: 45px;
+  }
+  div strong{
+    font-size: 1.4em;
+    font-family: sans-serif;
+  }
   
   
 /* nav{
@@ -135,6 +150,7 @@ nav a{
     text-decoration: none;
     color:#fff;
 } */
+
 .main{
     background-color: black;
     color: whitesmoke;
@@ -216,6 +232,7 @@ nav a{
 div article{
     font-size: 1.4em;
 }
+/*working on contact .css with the same nav bar because we are working on one file css as the main css*/
 /* contact css */
 .whole-container {
     background-color: black;
