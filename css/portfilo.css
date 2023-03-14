@@ -173,8 +173,8 @@ main {
 /*working at css grid rows and columns to dispaly layout all over the page*/
 .port{
  
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   margin: 0 auto;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -182,7 +182,7 @@ main {
   gap: 20px;
 }
 .port > div{
-   background-color: black;
+   background-color: white;
    padding: 19px;
   
   
