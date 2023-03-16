@@ -12,7 +12,7 @@ nav{
 
   nav ul{
     display: flex;
-    flex-wrap: wrap;
+    position: absolute;
     list-style: none;
   }
   nav ul li{
@@ -35,7 +35,7 @@ nav{
     color: rgb(84, 188, 10);
     font-size: 1.3em;
   }
-  nav .menu-btn i{
+  .checkbtn{
     color: #fff;
     font-size: 22px;
     cursor: pointer;
@@ -50,7 +50,7 @@ nav{
     }
   }
   @media (max-width: 700px) {
-    nav .menu-btn i{
+    .checkbtn {
       display: block;
     }
     #click:checked ~ .menu-btn i:before{
@@ -69,9 +69,20 @@ nav{
     #click:checked ~ ul{
       left: 0;
     }
+    .formedia img{
+      height:200px;
+      width: 300px;
+      
+    }
+    .text{
+      font-size: medium;
+      margin-right: 30px;
+      
+    }
     nav ul li{
       width: 100%;
       margin: 40px 0;
+      position: justify;
     }
     nav ul li a{
       width: 100%;
@@ -88,7 +99,19 @@ nav{
       background: none;
       color: cyan;
     }
+
+  .main > div:nth-child(3){
+    height: 100px;
+    width: 200px;
+    grid-row: 1;
+    grid-column: 3 / span 5
+    
+}
+
+    
   }
+ 
+
  
   
   div p{
@@ -112,7 +135,7 @@ nav{
     display: grid;
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(8, 1fr);
-   gap: 20px;
+   gap: 0px;
 }
 .main > div{
     text-align: center;
@@ -129,13 +152,14 @@ nav{
     grid-column: 1 / 2 span;
 }
 .main > div:nth-child(3){
+  
     width: 400px;
     grid-row: 1;
     grid-column: 6 / span 8
     
 }
 .main > div:nth-child(4){
-    
+    height: 30px;
     grid-row:  2;
     grid-column: 5 / span 8
     
@@ -159,12 +183,16 @@ nav{
   grid-column: 6 / span 8
   
 }
-
-
-
-div h1{
-  font-size: larger;
+/*working with the Media Queries*/
+@media screen (max-width: 700px) {
+  h1
 }
+
+    
+  
+
+
+
 
 
 
@@ -210,10 +238,13 @@ div img:hover{
   grid-column: 3 / 5 ;
 }
 div h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
   text-align: center;
 }
-
-
+.whole-container h1{
+  font-size: 2.3em;
+}
 
 
 
